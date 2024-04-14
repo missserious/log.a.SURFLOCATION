@@ -55,3 +55,26 @@ a:visited {
   height: 100%;
   background-color: var(--color-light--1);
 }
+
+/* Test-Box */
+#box-red {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: #e1341e;
+}
+
+#box-blue {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: #1ecbe1;
+}
+
+.red {
+  background-color: #e1341e;
+}
+
+.blue {
+  background-color: #1ecbe1;
+}

@@ -18,12 +18,47 @@
   </head>
 
   <!-- TODO: 
-    - https://www.google.com/search?sca_esv=28539f6bd3358b60&sca_upv=1&q=docker+static+websites&tbm=vid&source=lnms&prmd=ivnbz&sa=X&ved=2ahUKEwjVioSD87mFAxUIR_EDHWXOA_YQ0pQJegQIDRAB&biw=1920&bih=927&dpr=1#fpstate=ive&vld=cid:3ac96608,vid:b5c0F_RF_ok,st:0 
-    - https://lerneprogrammieren.de/docker-container-statische-html-website/
-    - https://www.google.com/search?q=statischer+website+dockercontainer+hosten&sca_esv=fd299e0f5b2672c9&sca_upv=1&source=hp&ei=0A4YZqaXCreUxc8P4smn2Aw&iflsig=ANes7DEAAAAAZhgc4PmAGqcI0gSjFw5pCH13Efu1j8kI&ved=0ahUKEwimv5_AybqFAxU3SvEDHeLkCcsQ4dUDCA8&uact=5&oq=statischer+website+dockercontainer+hosten&gs_lp=Egdnd3Mtd2l6IilzdGF0aXNjaGVyIHdlYnNpdGUgZG9ja2VyY29udGFpbmVyIGhvc3RlbjIIEAAYgAQYogQyCBAAGIAEGKIESJtWUABY6VNwA3gAkAEAmAGyAaAB_CqqAQQ4LjM2uAEDyAEA-AEBmAIvoAK9LsICCxAAGIAEGIoFGJECwgIREC4YgAQYigUYkQIYxwEY0QPCAgsQLhiABBjHARjRA8ICBRAAGIAEwgIFEC4YgATCAgoQABiABBiKBRhDwgIKEC4YgAQYigUYQ8ICDhAuGIAEGMcBGK8BGI4FwgILEC4YgAQYxwEYrwHCAhEQLhiABBiSAxjHARivARiOBcICDRAAGIAEGIoFGEMYyQPCAhAQLhiABBiKBRhDGMcBGNEDwgINEC4YgAQYxwEY0QMYCsICBxAAGIAEGArCAgYQABgWGB7CAggQABgWGB4YCsICBxAAGIAEGBPCAggQABgWGB4YE8ICBRAhGKABwgIFECEYnwXCAgcQABiABBgNwgIHECEYChigAcICBhAhGA0YFcICBBAhGArCAgkQIRgKGKABGAqYAwCSBwQ2LjQxoAfA9QE&sclient=gws-wiz#fpstate=ive&vld=cid:cd17f999,vid:XTi4booa1t8,st:0
+    https://www.mediaevent.de/javascript/input.html
+    https://www.mediaevent.de/html/input-date.html
    -->
+
   <body>
-    <div class="sidebar">This is the sidebar</div>
+    <div class="sidebar">
+      <!-- <form novalidate > ... -->
+      <form>
+
+        <lable for="coordinates">coordinates<lable/> 
+        <input type="text" id="coordinates" placeholder="51.50693, 10.74318"/><br />
+  
+        <lable for="time">time<lable/> 
+        <input type="time" id="time" />
+  
+        <lable for="date">date<lable/> 
+        <input type="date" id="date" /><br />
+      
+        <!-- Duration slider -->
+        <!-- Surf-Type drop-down -->
+      
+        <lable for="description">description<lable/> 
+        <textarea name="description" id="description"></textarea><br />
+
+        <lable for="wave-type">wave type<lable/> 
+        <input type="text" id="wave-type" list="wave-list"/><br />
+
+        <datalist id="wave-list">
+          <option>Point</option>
+          <option>Reef</option>
+          <option>Beach</option>
+        </datalist>
+
+        <input type="submit" /><br />
+  
+      </form>
+
+      <img src="img/formular.png" /><br /><br />
+      <div id="box-red">red</div>
+      <div id="box-blue">blue</div>
+    </div>
 
     <div id="map">Later...</div>
   </body>
